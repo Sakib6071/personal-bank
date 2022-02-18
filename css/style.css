@@ -1,0 +1,32 @@
+/* google font added here */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* custom css classes */
+
+body{
+    background-color: #cce9f46b;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.bg-custom{
+    background-color: rgba(119, 136, 153, 0.521);
+}
+.custom-bold{
+    font-weight: 500;
+}
+.width{
+    display: inline-block;
+    width: 80px;
+}
+.second-header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.btn-text{
+    font-weight: 600;
+    box-shadow: 3px 3px 10px gray;
+}
+input{
+    border: 1px solid rgba(0, 0, 255, 0.342);
+    font-weight: 600;
+}

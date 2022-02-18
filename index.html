@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bank</title>
+
+    <!-- bootstrap css link added -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- css link added -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header part start here -->
+    <header>
+        <h1 class="mainHeading text-center my-5 text-info fw-bold">Personal Bank <span class="h1 text-danger fw-bold">& Cost Calculation</span></h1>
+    </header>
+
+    <!-- main section start here -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <!-- image section -->
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid rounded" src="images/header.jpg" alt="header image">
+                </div>
+
+                <!-- main content -->
+                <div class="col-12 col-md-6 bg-custom py-3 rounded">
+                    <div class="incomeCost mt-2 text-center">
+
+                        <!-- income part -->
+                        <div class="h3 text-center text-primary second-header">Income</div>
+                        <div class="salaryContainer">
+                            <span class="fs-5 width text-start">Income : </span>
+                             <input class="ps-2 rounded text-primary" type="text" name="" id="mainSalary" placeholder="Enter Your Income">
+                        </div>
+
+                        <!-- expenses part -->
+                        <div class="h3 text-center mt-4 text-danger second-header">Expenses</div>
+                        <div class="foodExpensesContainer pt-1 pb-1">
+                            <span class="fs-5 width text-start ">Food : </span>
+                             <input class="ps-2 rounded text-danger" type="text" name="" id="foodCost" placeholder="Enter Food Cost">
+                        </div>
+                        <div class="rentExpensesContainer pt-1 pb-1">
+                            <span class="fs-5 width text-start">Rent : </span>
+                             <input class="ps-2 rounded text-danger" type="text" name="" id="rentCost" placeholder="Enter Rent Cost">
+                        </div>
+                        <div class="clothesExpensesContainer pt-1 pb-3">
+                            <span class="fs-5 width text-start">Clothes : </span>
+                             <input class="ps-2 rounded text-danger" type="text" name="" id="clothesCost" placeholder="Enter Clothes Cost">
+                        </div>
+
+                        <div type="button" id="calculate-btn" class="btn btn-info btn-outline-danger text-white btn-text">Calculate</div>
+
+                        <div class="totalExpenses mt-4">
+                            <span class="totalExpensesText fs-4 h4"> Total Expenses : <span class="h4" id="totalExpensesValue">00</span></span>
+                        </div>
+                        <div class="currentBalance my-1">
+                            <span class="currentBalanceText fs-4 h4"> Balance : <span class="h4" id="currentBalanceValue">00</span></span>
+                        </div>
+
+
+                    </div>
+
+                    <!-- saving part -->
+                    <div class="savingSection mt-4 text-center">
+                        <div class="savingContainer">
+                            <span class="fs-5">Save : </span>
+                             <input class="ps-2 rounded text-primary" type="text" name="" id="saveAmount" placeholder="Enter Saving Percent">
+                             <span>%</span>
+                             <button class="btn btn-info btn-outline-danger text-white ms-1 mt-2 mt-sm-0 btn-text" id="save-btn">Save</button>
+
+                             <div class="savingAmount mt-4">
+                                <span class="savingAmountText fs-4 h4">Saving Amount : <span class="savingAmountValue h4" id="savingField">00</span></span>
+                            </div>
+                            <div class="remainingBalance my-1">
+                                <span class="remainingBalanceText fs-4 h4">Remaining Balance : <span class="remainingBalanceValue h4" id="remainingField">00</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- footer part start here -->
+    <footer>
+
+    </footer>
+
+    
+    <!-- JS script added -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
